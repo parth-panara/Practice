@@ -4,7 +4,18 @@ font-size: 150%;
 .paraFont{
     font-size: 85%;
 }
+.secondparafont{
+    font-size: 100%;
+}
 
 .p1 {
   font-family: "Times New Roman", Times, serif;
+}
+
+.tab {
+ margin-left: 1em;
+}
+
+.tab2 {
+ margin-left: 1.5em;
 }

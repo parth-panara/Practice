@@ -1,4 +1,199 @@
 {% extends "base.html" %}
 {% block content %}
-    Page 2
+
+<h6> <span style="float:right">Page 2</span></h6>
+
+    <!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+
+        <title>{% block title %}{% endblock %}This is {{ name }} Website</title>
+    {% endblock %}
+</head>
+<div class="container">
+<header class="mt-12">
+    <div id="heading" class="p1">
+    <h2><strong>Docker</strong></h2>
+    </div>
+</header>
+    <div id="heading" class="p1">
+        <br><h3>Docker: </h3>
+    </div>
+    <div id="paragraph" class="paraFont p1">
+        <p>
+            ‘Docker’is a software program platform for constructing packages primarily based totally on
+            containers—small and light-weight execution environments that make shared use of the running machine
+            kernel however in any other case run in isolation from one another.
+        </p>
+        <p>
+
+            A ‘container’ is a unit of software that packages contains program code and all its dependencies. Therefore,
+            the application runs quickly and reliably from one computing environment to another.
+        </p>
+        <p>
+            A Docker ‘container ‘ contains the ‘image’. Image is a lightweight, standalone, executable package of
+            software that includes everything needed to run an application: code, runtime, system tools, system
+            libraries and settings. one container is able to consist a number of images.
+        </p>
+        <p>
+            ‘Docker hub’ is the largest ‘repository’ of container images with its content sources and open source
+            projects. Independent software developers building and distributing their code in containers at docker hub.
+        </p>
+        <p>
+            We can pull and push the container images to the repositories of docker hub.
+        </p>
+        <p>
+            There are two types of ‘repository’ available in the docker. one is public and another is private. Docker
+            images that may be used by anybody can be stored in public repositories. We may also make our images public
+            by uploading them to the Docker Hub public repository.
+        </p>
+
+
+        <div id="heading" class="p1">
+            <br><h3>Docker commands: </h3>
+        </div>
+        1) Docker run:- it’s used to creat a container from an image.
+        <div id="margin" class="tab">Command: docker run -it -d 'image name'</div>
+        2) Docker pull:- it’s used to pull images from docker.
+        <div id="margin" class="tab">Command: docker pull 'image name'</div>
+        3) Docker container:- it’s used to list the running containers.
+        <div id="margin" class="tab">Command: docker ps</div>
+        4) All docker containers:- It’s used to see all running and exited containers.
+        <div id="margin" class="tab">Command: docker ps -a</div>
+        5) Access the running container:-
+        <div id="margin" class="tab">Command: docker exec -it 'container id' bash</div>
+        6) Docker stop:- To stop the running container
+        <div id="margin" class="tab">Command: docker stop 'container id'</div>
+        7) Docker push:- It’s used to push an image to the docker hub repository.
+        <div id="margin" class="tab">Command: docker push 'username/image name'</div>
+        8) Delete a container:- It’s used to delete a stopped container.
+        <div id="margin" class="tab">Command: docker rm 'container id'</div>
+        9) Docker build:- It’s used to build an image from a specified docker file.
+        <div id="margin" class="tab">Command: docker build 'path to docker file'</div>
+        10) All docker local images:- List all images that are locally stored with the Docker Engine
+        <div id="margin" class="tab2">Command: docker image ls</div>
+        11) Docker login:-
+        <div id="margin" class="tab2">Command : docker login</div>
+        12) Docker network:- It’s used for the detail list of all the network in the cluster.
+        <div id="margin" class="tab2">Command: docker network ls</div>
+
+        <div id="heading" class="p1">
+           <br> <h3>Docker Project starts: </h3>
+        </div>
+
+
+        <h5>Step 1.</h5>
+        I should have a project file in my local directory. (For Instance, project that I considered as a reference
+        project file from
+        https://github.com/docker/getting-started/tree/master/app).
+        <ul style="list-style-type:circle;">
+            <li>I download this project in my local directory.</li>
+
+            <li> In the folder src , I have a package.json file. at the same place, I creat a docker file.</li>
+            <li> The docker file for the above-mentioned project I consider coding reference from
+                (https://docs.docker.com/get-started/02_our_app/)
+            </li>
+        </ul>
+        <h5>Step 2.</h5>
+        <ul style="list-style-type:circle;">
+            <li>To work and open the project for docker app, I go to the project directory by using the below-mentioned
+                command in the
+                terminal. (Thus, I can reach to my folder directory)
+                <br>Command: cd/ mnt/ c:/ Users/ Parth Panara/ deskstop/ is601/
+            </li>
+            <li>
+                Now, I am working in that above-mentioned folder and making a file directory there.( assumed file name:
+                ‘mywebsite’ .)
+                <br>Command: mkdr mywebsite
+            </li>
+            <li>Then, i need to work in the above-mentioned folder so I go there by using below command in the
+                terminal.
+
+            <br>Command: cd/ mnt/ c:/ Users/ Parth Panara/ deskstop/ is601/mywebsite/
+            <br>(Note: in this folder i have alredy my project and all my required files according to step:1, then i can
+            jump on the step:3)
+</li>
+        </ul>
+
+        <h5>Step 3.</h5>
+        <ul style="list-style-type:circle;">
+            <li>Now, I am inside the folder (mywebsite) where I have doker file. I can make sure by using ‘pwd’ command
+                in the terminal to see
+                where I am! Then, I will build the image for container using the docker file in that folder. I will
+                write a below-mentioned command in the terminal. (Assumed the image name of ‘getting started’)
+                <br>Command: docker build -t getting-started .
+                <br>(Note: docker gives any random name to our container.)
+            </li>
+        </ul>
+        <h5>Step 4.</h5>
+        <ul style="list-style-type:circle;">
+            <li>I have an image, I will run the application. To do so, I will use the docker run command.
+                <br>Command: docker run -dp 3000:3000 getting-started
+                <br>(Note: 3000:3000 is described for the hosts and container ports. After few seconds, I can open
+                browser to http://localhost:3000 )
+            </li>
+        </ul>
+        <h5>Step 5.</h5>
+        <ul style="list-style-type:circle;">
+            <li>
+                I will go to the docker hub where I have my created account. I create a repository there with ‘public’
+                option and ‘getting-started ’ name. Then, i will
+                come back to the terminal and write a below command.
+                <br> Command: docker login -u 'YOUR-USER-NAME'
+            </li>
+        </ul>
+        <h5>Step 6.</h5>
+        <ul style="list-style-type:circle;">
+            <li> I need to tage my image in docker hub.
+                <br> Command: docker tag getting-started 'YOUR-USER-NAME'/getting-started
+            </li>
+        </ul>
+        <h5>Step 7.</h5>
+        <ul style="list-style-type:circle;">
+            <li>
+                I push the image to the docker hub. I have created in container by using image and push that image by
+                using below-mentioned command
+                <br>Command: docker push 'YOUR-USER-NAME'/getting-started
+            </li>
+        </ul>
+        <h5>Step 8.</h5>
+        <ul style="list-style-type:circle;">
+            <li>
+                In the terminal, I can start my freshly pushed app of docker hub by using below command
+                <br> Command: docker run -dp 3000:3000 YOUR-USER-NAME/getting-started
+            </li>
+        </ul>
+
+
+    </div>
+
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
+
+</html>
+
+
 {% endblock %}
