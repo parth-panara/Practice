@@ -1,3 +1,10 @@
 body {
-font-size: 200%;
+font-size: 150%;
+}
+.paraFont{
+    font-size: 85%;
+}
+
+.p1 {
+  font-family: "Times New Roman", Times, serif;
 }
