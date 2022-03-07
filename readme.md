@@ -31,9 +31,6 @@ Submitted by: Parth Panara
 ### Page 3
 ![Running Program](https://github.com/parth-panara/Parth_Project_1/blob/master/app/static/images/page3.jpg)
 
-(Note: These screenshots have been captured on the 67% zoom level of the webpage server screen.)
-
-
 ### Page 4
 ![Running Program](https://github.com/parth-panara/Parth_Project_1/blob/master/app/static/images/page4.jpg)
 
