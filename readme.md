@@ -1,4 +1,4 @@
-# Project Setup
+# Project-1 
 
 [![Production Workflow](https://github.com/kaw393939/docker_flask/actions/workflows/prod.yml/badge.svg)](https://github.com/kaw393939/docker_flask/actions/workflows/prod.yml)
 
@@ -9,7 +9,11 @@
 
 * [Developmental Deployment](https://kwilliam-dev.herokuapp.com/)
 
-## Setting up CI/CD
+Subject: IS 601
+Guided by: Prof. Keith Williams
+Submitted by: Parth Panara
+
+## All pages Screenshot of project from Heroku application
 
 The result of this will be that when you create a pull request to merge a branch to master, it will deploy to your
 heroku development app/dyno and when you merge or push to master on github, it will deploy the app to the production heroku
