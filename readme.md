@@ -1,6 +1,6 @@
 # Project-1 
 
-[![Production Workflow](https://github.com/kaw393939/docker_flask/actions/workflows/prod.yml/badge.svg)](https://github.com/kaw393939/docker_flask/actions/workflows/prod.yml)
+[![Production Workflow](https://github.com/parth-panara/Parth_Project_1/actions/workflows/prod.yml/badge.svg)](https://github.com/parth-panara/Parth_Project_1/actions/workflows/prod.yml)
 
 * [Production Deployment](https://kwilliam-prod.herokuapp.com/)
 
