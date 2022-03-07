@@ -10,8 +10,8 @@
 
 * [Developmental Deployment](https://parth-develop.herokuapp.com/)  (Click here for Heroku app)
 
-Subject: IS 601
-Guided by: Prof. Keith Williams
+Subject: IS 601\
+Guided by: Prof. Keith Williams\
 Submitted by: Parth Panara
 
 ## All pages Screenshot of project from Heroku application
