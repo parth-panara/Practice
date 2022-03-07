@@ -36,3 +36,5 @@ Submitted by: Parth Panara
 
 ### Page 4
 ![Running Program](https://github.com/parth-panara/Parth_Project_1/blob/master/app/static/images/page4.jpg)
+
+(Note: These screenshots have been captured on the 67% zoom level of the webpage server screen.)
